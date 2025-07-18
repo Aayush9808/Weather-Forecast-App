@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <div class="logo">WeatherWise</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Get Weather</button>
+            <button id="current-location-btn">Use Current Location</button>
+        </section>
+
+        <section class="weather-display">
+            <div id="current-weather">
+                <h2></h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <img src="" alt="Weather Icon">
+            </div>
+
+            <div id="forecast-heading">
+                <h2>5-Day Forecast</h2>
+            </div>
+            <div id="forecast-container">
+                </div>
+        </section>
+
+        <section class="major-cities">
+            <h2>Major Cities Weather</h2>
+            <div id="major-cities-list">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
