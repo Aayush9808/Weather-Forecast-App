@@ -26,7 +26,7 @@ Follow these steps to get a copy of the project up and running on your local mac
 * A web browser (Chrome, Firefox, Edge, etc.)
 * A text editor or IDE (like VS Code)
 * **An OpenWeatherMap API Key:**
-    1.  Go to [OpenWeatherMap](https://openweathermap.openweathermap.org/api)
+    1.  Go to [OpenWeatherMap](https://openweathermap.org/api)
     2.  Sign up for a free account.
     3.  Find your API key in your account's API Keys section.
 
