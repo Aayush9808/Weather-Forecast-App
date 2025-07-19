@@ -68,4 +68,4 @@ _Built with ❤️ for learning web development._
 <br/>
 _Regards_
 <br/>
-`Aayush Kumar Shrivastav`
+*Aayush Kumar Shrivastav*
