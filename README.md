@@ -65,4 +65,7 @@ This project is open-source. (You can add a specific license if you want, e.g., 
 
 ---
 _Built with ❤️ for learning web development._
+<br/>
+_Regards_
+<br/>
 `Aayush Kumar Shrivastav`
