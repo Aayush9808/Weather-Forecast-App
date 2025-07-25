@@ -3,50 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecast App</title>
+    <title>Weather Dashboard Pro+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <nav>
-            <div class="logo">Weather Forecast App</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section class="search-section">
-            <input type="text" id="city-input" placeholder="Enter city name...">
-            <button id="search-btn">Get Weather</button>
-            <button id="current-location-btn">Use Current Location</button>
-        </section>
-
-        <section class="weather-display">
-            <div id="current-weather">
-                <h2></h2>
-                <p></p>
-                <p></p>
-                <p></p>
-                <img src="" alt="Weather Icon">
-            </div>
-
-            <div id="forecast-heading">
-                <h2>5-Day Forecast</h2>
-            </div>
-            <div id="forecast-container">
+    <div class="app-container">
+        <aside id="left-panel" class="left-panel">
+            <div class="panel-content">
+                <div class="header">
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="city-input" placeholder="Search for a city..." autocomplete="off">
+                        <div id="suggestions-box"></div>
+                    </div>
+                    <div class="controls-container">
+                        <div class="theme-switcher">
+                            <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+                            <label for="theme-toggle" class="theme-toggle-label">
+                                <i class="fas fa-moon"></i><i class="fas fa-sun"></i><span class="ball"></span>
+                            </label>
+                        </div>
+                        <div class="unit-switcher">
+                            <button id="celsius-btn" class="unit-btn active">&deg;C</button>
+                            <button id="fahrenheit-btn" class="unit-btn">&deg;F</button>
+                        </div>
+                    </div>
                 </div>
-        </section>
 
-        <section class="major-cities">
-            <h2>Major Cities Weather</h2>
-            <div id="major-cities-list">
+                <div class="location-controls">
+                    <div id="search-history" class="search-history-container"></div>
+                    <button id="current-location-btn" class="location-btn">
+                        <i class="fas fa-map-marker-alt"></i> Current Location
+                    </button>
                 </div>
-        </section>
-    </main>
+
+                <div id="current-weather">
+                    </div>
+            </div>
+        </aside>
+
+        <main class="right-panel">
+            <div id="right-panel-content">
+                </div>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
