@@ -48,7 +48,7 @@ This is a simple web application designed to provide current weather conditions 
 
 ```bash
 git clone https://github.com/Aayush9808/weather-forecast-app.git
-cd weather-forecast-app
+cd weather-forecast-app```
 
 
 ## 🤝 Contributing
